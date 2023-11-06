@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>page2</title>
+</head>
+<body>
+    <!--Question 3-->
+    <canvas id = "myCanvas" width="800" height="500" style="border: 2px solid black" >
+        Your browser does not support this tag.
+    </canvas>
+    <script>
+            var canvas= document.getElementById("myCanvas");
+            var context = canvas.getContext('2d');
+            context.strokeStyle = "red";
+            context.fillStyle = "blue";
+            context.fillRect(10,10,100,100);
+            context.strokeRect(10,10,100,100);
+            context.moveTo(50,50);
+            context.lineTo(300,300);
+            context.stroke();
+            context.beginPath();
+            context.arc(250,250,100,0,2*Math.PI, false);
+            context.fill();
+            context.beginPath();
+            context.moveTo(100, 100);
+            context.lineTo(200, 100);
+            context.lineTo(150, 200);
+            context.closePath();
+            context.fillStyle = "green";
+            context.fill();
+          
+    </script>
+
+</body>
+</html>
